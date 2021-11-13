@@ -95,7 +95,6 @@ a
          top: 60px
          left: 50px
          width: 100%
-         filter: brightness(120%)
    &__text
       position: absolute
       left: -140px
@@ -115,7 +114,7 @@ a
       width: 676px
       margin: 0 auto
    &__inner
-      padding-bottom: 70px
+      padding-bottom: 100px
    &__grid
       @include ptmin
       @include grid
@@ -125,18 +124,19 @@ a
       position: relative
       width: 242px
       height: 266px
+      @include bgc
       img
          position: absolute
          top: 24px
          left: 28px
-      @include bgc
+         width: 242px
       &:nth-child(1)
          justify-self: end
       &:nth-child(3)
          justify-self: start
    &__socials
       position: absolute
-      bottom: -70px
+      bottom: -100px
       right: -25px
       display: flex
       justify-content: flex-end
@@ -202,6 +202,8 @@ a
    &__inner
       @include grid
       @include gapmin
+      &:nth-child(2)
+         @include mt
       img
          width: 100%
          max-width: 348px
@@ -258,10 +260,13 @@ a
 // Footer
 
 .footer
+   @include mt
+   background-color: #C4C4C4
    &__inner
-      
-      justify-items: center
+      display: flex
+      justify-content: space-between
       align-items: center
+      flex-wrap: wrap
       height: 226px
    &__logo
       align-self: start
@@ -272,6 +277,9 @@ a
          grid-column: span 2
       &:nth-child(3)
          justify-self: end
+   &__desc
+      width: 100%
+      max-width: 248px
    &__inst
       display: block
       text-align: right
