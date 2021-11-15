@@ -96,6 +96,14 @@
    .seminar
       &__item
          max-width: 100%
+   .footer
+      &__inner
+         display: flex
+         flex-direction: column
+      &__desc
+         text-align: center
+      &__post, &__inst
+         text-align: center
 @media (max-width: 729px)
 
 @media (max-width: 709px)
@@ -112,5 +120,14 @@
             margin-bottom: 100px
          &:nth-child(3)
             margin-right: 28px
+   .regular
+      &__inner
+         picture
+            justify-self: center
 /* xs <= Small (sm) */
 @media (max-width : 576px)
+
+@media (max-width: 539px)
+   .readmore
+      &__first
+         @include mtmin
