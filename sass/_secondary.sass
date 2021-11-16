@@ -1,0 +1,18 @@
+.secondary
+   @include mtmin
+   &__breadcrumbs
+      display: flex
+      justify-content: flex-start
+   &__link
+      padding: 0 14px
+      position: relative
+      &--active
+         text-decoration: underline
+      &:after
+         position: absolute
+         right: 0
+         content: '/'
+      &:first-child
+         padding-left: 0
+   &__heading
+      @include mtmin

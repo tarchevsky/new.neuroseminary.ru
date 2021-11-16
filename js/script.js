@@ -9,6 +9,16 @@ const text = document.querySelector(".text p");
 		)
 		.join("");
 
+
+// Modal
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+
 // Slick
 
 $('.videos__wrapper').slick({

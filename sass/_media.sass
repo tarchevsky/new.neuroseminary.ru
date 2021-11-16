@@ -63,9 +63,11 @@
          img
             display: none
       &__text
-         position: absolute
-         left: 28px
-         top: 28px
+         @include ptmin
+         position: static
+         // position: absolute
+         // left: 28px
+         // top: 28px
       &__header
          color: #fff
       &__prgrph
@@ -128,6 +130,8 @@
 @media (max-width : 576px)
 
 @media (max-width: 539px)
-   .readmore
-      &__first
-         @include mtmin
+   a
+      &>.readmore
+         width: 80px
+         &__first
+            @include mtmin
