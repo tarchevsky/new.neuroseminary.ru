@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Neuroseminary">
+<meta name="application-name" content="Neuroseminary">
+<meta name="msapplication-TileColor" content="#333333">
+<meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Нейросеминары - семинары по нейропсихологии для специалистов и родителей</title>
@@ -345,22 +354,22 @@
 
     <!-- Article end -->
 
-    <div class="consultation">
+    <div class="consultation" id="#consultation">
         <div class="container">
             <h6 class="consultation__heading">Свяжитесь с нами</h6>
             <div class="consultation__inner">
-                <form id="form" action="">
+                <form id="consultation-form" class="consultation-form" action="">
                     <div class="consultation__item">
                         <label for="name">Ваше имя</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name">
                     </div>
                     <div class="consultation__item">
                         <label for="email">Ваша почта</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email">
                     </div>
                     <div class="consultation__item">
                         <label for="phone">Ваш телефон</label>
-                        <input type="phone" name="phone" id="phone">
+                        <input type="number" name="phone">
                     </div>
                     <div class="consultation__item">
                         <input class="readmore" type="submit">
@@ -400,7 +409,9 @@
         </div>
     </footer>
     <!-- Footer end -->
-    <script src="libs/jquery/dist/jquery.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/emblem.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/script.min.js"></script>

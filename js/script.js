@@ -1,23 +1,13 @@
+
 'use strict';
 
 //Emblem
 
 const text = document.querySelector(".text p");
-		
 		text.innerHTML = text.innerText.split("").map((letter, i) =>
 		`<span style="transform:rotate(${i * 22}deg")>${letter}</span>`
 		)
 		.join("");
-
-
-// Modal
-
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
 
 // Slick
 
@@ -54,4 +44,17 @@ $('.videos__wrapper').slick({
 		// instead of a settings object
 	 ]
  });
-	 
+	
+// Form
+
+// $('#consultation-form').validate({
+// 	rules: {
+// 		name: 'required',
+// 		email: {
+// 			required: 'true',
+// 			email: 'true'
+// 		}
+// 	}
+// });
+
+ 
