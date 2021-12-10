@@ -22,7 +22,7 @@
             flex-wrap: wrap
          &__item
             position: relative
-            padding-bottom: 32em
+            padding-bottom: 28em
          &__avatar
             display: block
             position: absolute
@@ -48,9 +48,14 @@
    .seminar
       &__inner
          grid-template-columns: 1fr
+   .founders
+      &__socials
+         right: 0
 
 /* md <= Large (lg) */
 @media (max-width : 992px)
+   h3
+      font-size: 30px
    .first-block
       padding: 0
       @include mtmin
@@ -70,34 +75,79 @@
          // top: 28px
       &__header
          color: #fff
+         font-size: 30px
       &__prgrph
          color: #fff
    .seminar
       &__inner
          gap: 40px
+      &__heading
+         font-size: 30px
       &__item
          padding: 95px 30px 18px
+   .founders
+      &__grid
+         grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+      &__heading
+         font-size: 30px
+      &__item
+         margin: 0
+         &:nth-child(1), &:nth-child(2), &:nth-child(3)
+            margin: 0
+         img
+            max-width: 100%
+            top: 0
+            left: 0
+      &-first
+         &__avatar
+            img
+               width: 100%
+               max-width: 200px
    .regular
       &__inner
          &--second
             picture
                justify-self: end
+      &__heading
+         font-size: 30px
       &__text
          &--second
             grid-column: span 1
+   .lunch
+      &__heading
+         font-size: 30px
+      &__wrapper
+         picture
+            display: block
+            text-align: center
+            width: 100%
+            // max-width: 200px
+   .materials
+      &__heading
+         font-size: 30px
+   .consultation
+      &__heading
+         font-size: 30px
 
 /* sm <= Medium (md) */
 @media (max-width : 768px)
+   a.readmore
+         font-size: 13px
+         padding: 16px 60px
    .founders
       &__item
          &:nth-child(1)
                justify-self: center
          &:nth-child(3)
             justify-self: center
-            margin-right: 28px
    .seminar
       &__item
          max-width: 100%
+   .lunch
+      &__wrapper
+         display: block
+         img
+            @include mtmin
    .footer
       &__inner
          display: flex
@@ -110,18 +160,16 @@
 
 @media (max-width: 709px)
    .founders-first
-      padding-bottom: 508px
+      padding-bottom: 350px
+      margin: 0
       &__names
          justify-content: center
 
 @media (max-width: 674px)
    .founders
       &__item
-         margin-right: 28px
          &:nth-child(1)
             margin-bottom: 100px
-         &:nth-child(3)
-            margin-right: 28px
    .regular
       &__inner
          picture
@@ -135,3 +183,10 @@
          width: 80px
          &__first
             @include mtmin
+@media (max-width: 320px)
+   .regular
+      &__inner
+         grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+         img
+            width: 100%
+            max-width: 200px
